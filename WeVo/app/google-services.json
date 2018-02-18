@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "641751842519",
+    "firebase_url": "https://wevo-8a9f0.firebaseio.com",
+    "project_id": "wevo-8a9f0",
+    "storage_bucket": "wevo-8a9f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:641751842519:android:ed721202f7c15e9a",
+        "android_client_info": {
+          "package_name": "com.example.deversity.wevo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "641751842519-drgvj15ku3rvsnfjg100t8j5se2huudq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.deversity.wevo",
+            "certificate_hash": "deb4b17144114a60945c6412cb474dcdc1815acb"
+          }
+        },
+        {
+          "client_id": "641751842519-f7c9ibpps8h1h3m9jbk5smoudmp3s7m2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVk_M2klfl33g0WouMh-FIMn8UvMC2i58"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "641751842519-f7c9ibpps8h1h3m9jbk5smoudmp3s7m2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

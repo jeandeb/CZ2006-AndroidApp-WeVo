@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.deversity.wevo.ui.EventCreator">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Event Name" />
+
+        <EditText
+            android:id="@+id/editTextEventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Event Description" />
+
+        <EditText
+            android:id="@+id/editTextEventDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Location of Event:" />
+
+        <EditText
+            android:id="@+id/editTextEventLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:inputType="textPostalAddress" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Date of Event:" />
+
+        <EditText
+            android:id="@+id/editTextEventDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:inputType="date" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Time of Event:" />
+
+        <EditText
+            android:id="@+id/editTextEventTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:inputType="time" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/FunctionalButtonInEventCreator"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="#00ff00"
+                android:text="Okay"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintRight_toLeftOf="@+id/discardButton" />
+
+            <Button
+                android:id="@+id/discardButton"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintLeft_toRightOf="@+id/submitButton"
+                android:background="#ff0000"
+                android:text="Discard"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

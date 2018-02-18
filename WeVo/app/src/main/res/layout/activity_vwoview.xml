@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.deversity.wevo.ui.VWOView">
+
+    <LinearLayout
+        android:id="@+id/vwoLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/vwoNameLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vwo_name_placeholder"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/descripEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/enter_your_description"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/ButtonEditDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Edit" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addEventButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_event_button" />
+
+        <Button
+            android:id="@+id/buttonLogOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="log out" />
+
+        <TextView
+            android:id="@+id/eventLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_event"
+            android:textSize="24sp" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ScrollView>
+        <ListView
+            android:id="@+id/eventList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

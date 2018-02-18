@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.deversity.wevo.ui.EventCreator">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33999997">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Job Name"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextJobName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Job Description"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextJobDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount of Volunteer Need"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextVolunteerNeeded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:inputType="text" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/addJobButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="#00ff00"
+                android:text="Add Job"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintRight_toLeftOf="@+id/discardButton" />
+
+            <Button
+                android:id="@+id/finishButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_dark"
+                android:text="Finish"
+                app:layout_constraintLeft_toRightOf="@+id/submitButton" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
